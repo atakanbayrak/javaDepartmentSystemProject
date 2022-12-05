@@ -3,7 +3,6 @@ package javaLabProjeOdev.business.course;
 import java.util.ArrayList;
 import java.util.List;
 
-import javaLabProjeOdev.entities.course.Course;
 import javaLabProjeOdev.entities.course.CourseDoctoral;
 import javaLabProjeOdev.entities.course.CourseGraduate;
 import javaLabProjeOdev.entities.course.CourseMaster;

@@ -25,19 +25,17 @@ public class Main {
 		Lecturer lecturer = new Lecturer("1880", "Ali", "Akcayol");
 		Lecturer lecturer2 = new Lecturer("1880", "Mehmet", "Akcayol");
 		
-		Student student = new Student("191180020","Sude","Ozkanoglu","Second");
 		StudentDoctoral studentDoctoral = new StudentDoctoral("191180020","Sude","Ozkanoglu","Second","Computer Science",true,4);
 		
 		CourseDoctoral course = new CourseDoctoral("BM101","Bilgisayar Yazýlýmý",5,"Engineering Faculty",true,"Oktay","Yýldýz");
 		CourseMaster course2 = new CourseMaster("BM102","Bilgisayar Programlama",5,"Engineering Faculty",masterCoursesPredictions, 5);
 		
-		AreaCanteen canteen = new AreaCanteen("Kesit Cafe", "Social", "75","Hüsnü","Kacan","555 555 55 55","2016");
 		
 		
 		CourseManager manager = new CourseManager();
 		StudentManager studentManager = new StudentManager();
 		
-		studentManager.addDoctoralStudent(studentDoctoral);
+		
 		manager.addMasterCourse(course2, lecturer);
 		manager.addDoctoralCourse(course, lecturer2);
 		
@@ -48,12 +46,14 @@ public class Main {
 			System.out.println(courses.getAcademicFieldPredictions());
 		}
 		
-		
-		
 		System.out.println(lecturer.getCourseQuantity());
 		System.out.println(lecturer2.getCourseQuantity());
 		
-		
+		studentManager.addDoctoralStudent(studentDoctoral);
+		for (StudentDoctoral studentsDoctoral : studentManager.showStudentsDoctoral()) {
+			System.out.println(studentsDoctoral.getName());
+			System.out.println(studentsDoctoral.getSurname());
+		}
 	}
 
 	

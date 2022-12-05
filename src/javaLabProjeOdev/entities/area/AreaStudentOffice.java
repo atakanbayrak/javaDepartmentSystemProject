@@ -1,9 +1,9 @@
 package javaLabProjeOdev.entities.area;
 
 public class AreaStudentOffice extends Area{
-
-	private String studentOfficeGsmNumber;
+	
 	final private boolean isStudentOfficeWorkHowItReallyShouldBe = false;
+	private String studentOfficeGsmNumber;
 	
 	public AreaStudentOffice(String areaName, String areaChargePersonType, String areaCapability,String studentOfficeGsmNumber) {
 		super(areaName, areaChargePersonType, areaCapability);

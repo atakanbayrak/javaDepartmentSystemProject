@@ -2,7 +2,7 @@ package javaLabProjeOdev.entities.course;
 
 import java.util.List;
 
-public class CourseMaster extends Course{
+public class CourseMaster extends CourseGraduate{
 
 	private float minCourseThesisBound;
 	private List<String> academicFieldPredictions;

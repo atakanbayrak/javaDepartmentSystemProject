@@ -11,6 +11,12 @@ public class CourseGraduate extends Course{
 		this.courseCapability = courseCapability;
 	}
 	
+
+	public CourseGraduate(String courseCode, String courseName, int credit, String courseLocation) {
+		super(courseCode, courseName, credit, courseLocation);
+	}
+
+
 	public String getCourseField() {
 		return courseField;
 	}

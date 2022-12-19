@@ -1,6 +1,6 @@
 package javaLabProjeOdev.entities.course;
 
-public class CourseDoctoral extends Course{
+public class CourseDoctoral extends CourseGraduate{
 	
 	private boolean isCourseNeedThesisForSuccess;
 	private String chefOfDoctoralStudentName;

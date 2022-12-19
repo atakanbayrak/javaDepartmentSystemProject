@@ -11,17 +11,17 @@ import javaLabProjeOdev.entities.lecturer.Lecturer;
 
 public class CourseManager {
 
-	List<CourseGraduate> coursesGraduate = new ArrayList<CourseGraduate>();
-	List<CourseMaster> coursesMaster = new ArrayList<CourseMaster>();
-	List<CourseDoctoral> coursesDoctoral = new ArrayList<CourseDoctoral>();
-	List<CourseUnderGraduate> coursesUnderGraduate = new ArrayList<CourseUnderGraduate>();
+	static List<CourseGraduate> coursesGraduate = new ArrayList<CourseGraduate>();
+	static List<CourseMaster> coursesMaster = new ArrayList<CourseMaster>();
+	static List<CourseDoctoral> coursesDoctoral = new ArrayList<CourseDoctoral>();
+	static List<CourseUnderGraduate> coursesUnderGraduate = new ArrayList<CourseUnderGraduate>();
 
 	public CourseManager() {
 
 	}
 
 	public boolean addGraduateCourse(CourseGraduate course, Lecturer lecturer) {
-		if (lecturer.getCourseQuantity() < 2) {
+		if (lecturer.getCourseQuantity() < 10) {
 
 			course.setLecturerName(lecturer.getLecturerName());
 			course.setLecturerSurname(lecturer.getLecturerSurname());
@@ -37,7 +37,7 @@ public class CourseManager {
 	}
 	
 	public boolean addUnderGraduateCourse(CourseUnderGraduate course, Lecturer lecturer) {
-		if (lecturer.getCourseQuantity() < 2) {
+		if (lecturer.getCourseQuantity() < 10) {
 
 			course.setLecturerName(lecturer.getLecturerName());
 			course.setLecturerSurname(lecturer.getLecturerSurname());

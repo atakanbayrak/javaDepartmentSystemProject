@@ -18,6 +18,10 @@ public class Lecturer {
         this.lecturerSurname = lecturerSurname;
         
     }
+    
+    public Lecturer() {
+       
+    }
 
 	public String getLecturerId() {
 		return lecturerId;

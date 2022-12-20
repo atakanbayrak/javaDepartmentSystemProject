@@ -6,6 +6,7 @@ import java.util.List;
 import javaLabProjeOdev.business.certificate.CertificateManager;
 import javaLabProjeOdev.business.course.CourseManager;
 import javaLabProjeOdev.business.lecturer.LecturerManager;
+import javaLabProjeOdev.business.secretary.SecretaryManager;
 import javaLabProjeOdev.business.student.StudentManager;
 import javaLabProjeOdev.entities.area.AreaCanteen;
 import javaLabProjeOdev.entities.course.Course;
@@ -90,9 +91,11 @@ public class Main {
 		// Sekreter lecturer degistirme
 		
 		StaffSecretary secretary = new StaffSecretary("15", "Hilal", "Buyuk", "Lecturer Information", 8, "Engineering Faculty", "2806565");
-		
-		
-		
+		secretary.getSecretaryGSM();
+		SecretaryManager secretaryManager = new SecretaryManager();
+		secretaryManager.setLecturerViaSecretary(lecturer);
+		System.out.println("Degisen Lecturer Bilgileri: "+lecturer.getLecturerName() +" "+  lecturer.getLecturerSurname() +" "+ lecturer.getCourseQuantity() +"\n" 
+		+ "Degistiren Sekreter Bilgileri: " + " " + secretary.getName() + " " + secretary.getSurname() + " " + secretary.getSecretaryGSM());
 		
 	}
 

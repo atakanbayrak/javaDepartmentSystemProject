@@ -16,6 +16,7 @@ public class CourseManager {
 	static List<CourseDoctoral> coursesDoctoral = new ArrayList<CourseDoctoral>();
 	static List<CourseUnderGraduate> coursesUnderGraduate = new ArrayList<CourseUnderGraduate>();
 
+	
 	public CourseManager() {
 
 	}

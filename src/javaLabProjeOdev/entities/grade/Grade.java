@@ -10,11 +10,12 @@ public class Grade {
     private String courseCode;
     private int credit;
     private String courseLocation;
-    private String lecturerInformation;
+    private String lecturerName;
+    private String lecturerSurname;
     private String grade;
     
 	public Grade(String studentId, String name, String surname, String year, String courseName, String courseCode,
-			int credit, String courseLocation, String lecturerInformation, String grade) {
+			int credit, String courseLocation, String lecturerName, String lecturerSurname) {
 		super();
 		this.studentId = studentId;
 		this.name = name;
@@ -24,8 +25,11 @@ public class Grade {
 		this.courseCode = courseCode;
 		this.credit = credit;
 		this.courseLocation = courseLocation;
-		this.lecturerInformation = lecturerInformation;
-		this.grade = grade;
+		this.lecturerName = lecturerName;
+		this.lecturerSurname = lecturerSurname;
+	}
+	
+	public Grade() {
 	}
 
 	public String getStudentId() {
@@ -92,12 +96,21 @@ public class Grade {
 		this.courseLocation = courseLocation;
 	}
 
-	public String getLecturerInformation() {
-		return lecturerInformation;
+
+	public String getLecturerName() {
+		return lecturerName;
 	}
 
-	public void setLecturerInformation(String lecturerInformation) {
-		this.lecturerInformation = lecturerInformation;
+	public void setLecturerName(String lecturerName) {
+		this.lecturerName = lecturerName;
+	}
+
+	public String getLecturerSurname() {
+		return lecturerSurname;
+	}
+
+	public void setLecturerSurname(String lecturerSurname) {
+		this.lecturerSurname = lecturerSurname;
 	}
 
 	public String getGrade() {

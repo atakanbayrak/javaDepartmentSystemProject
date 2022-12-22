@@ -11,6 +11,7 @@ import javaLabProjeOdev.entities.lecturer.Lecturer;
 
 public class CourseManager {
 
+	//Static lists for courses which added from responsible person.
 	static List<CourseGraduate> coursesGraduate = new ArrayList<CourseGraduate>();
 	static List<CourseMaster> coursesMaster = new ArrayList<CourseMaster>();
 	static List<CourseDoctoral> coursesDoctoral = new ArrayList<CourseDoctoral>();
@@ -20,7 +21,8 @@ public class CourseManager {
 	public CourseManager() {
 
 	}
-
+	
+	// Adding graduate courses
 	public boolean addGraduateCourse(CourseGraduate course, Lecturer lecturer) {
 		if (lecturer.getCourseQuantity() < 10) {
 
@@ -37,6 +39,7 @@ public class CourseManager {
 		}
 	}
 	
+	// Adding undergraduate courses
 	public boolean addUnderGraduateCourse(CourseUnderGraduate course, Lecturer lecturer) {
 		if (lecturer.getCourseQuantity() < 10) {
 
@@ -53,6 +56,7 @@ public class CourseManager {
 		}
 	}
 	
+	// Adding master courses
 	public boolean addMasterCourse(CourseMaster course, Lecturer lecturer) {
 		if (lecturer.getCourseQuantity() < 2) {
 
@@ -69,6 +73,7 @@ public class CourseManager {
 		}
 	}
 	
+	// Adding doctoral courses
 	public boolean addDoctoralCourse(CourseDoctoral course, Lecturer lecturer) {
 		if (lecturer.getCourseQuantity() < 2) {
 			course.setLecturerName(course.getChefOfDoctoralStudentName());
@@ -83,19 +88,23 @@ public class CourseManager {
 			return false;
 		}
 	}
-
+	
+	// Showing exist lists
 	public List<CourseGraduate> showCoursesGraduate() {
 		return coursesGraduate;
 	}
 	
+	// Showing exist lists
 	public List<CourseUnderGraduate> showCoursesUnderGraduate() {
 		return coursesUnderGraduate;
 	}
 	
+	// Showing exist lists
 	public List<CourseMaster> showCoursesMaster() {
 		return coursesMaster;
 	}
 	
+	// Showing exist lists
 	public List<CourseDoctoral> showCoursesDoctoral() {
 		return coursesDoctoral;
 	}

@@ -6,12 +6,15 @@ import javaLabProjeOdev.entities.course.Course;
 
 public class Lecturer {
 
+    // Lecturer class variables
+
     private String lecturerId;
     private String lecturerName;
     private String lecturerSurname;
     private List<Course> lecturerCourses;
     private int courseQuantity;
 
+    // Lecturer class constructor
     public Lecturer(String lecturerId, String lecturerName, String lecturerSurname) {
         this.lecturerId = lecturerId;
         this.lecturerName = lecturerName;
@@ -22,7 +25,8 @@ public class Lecturer {
     public Lecturer() {
        
     }
-
+    
+    // Lecturer class gets and sets
 	public String getLecturerId() {
 		return lecturerId;
 	}

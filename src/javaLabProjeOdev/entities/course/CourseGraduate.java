@@ -2,8 +2,11 @@ package javaLabProjeOdev.entities.course;
 
 public class CourseGraduate extends Course{
 
+	// Course subclass which is CourseGraduate variables
 	private String courseField;
 	private float courseCapability;
+	
+	// Constructor
 	public CourseGraduate(String courseCode, String courseName, int credit, String courseLocation,String lecturerInformation, String courseField, float courseCapability) {
 		super(courseCode, courseName, credit, courseLocation);
 		// TODO Auto-generated constructor stub
@@ -17,6 +20,7 @@ public class CourseGraduate extends Course{
 	}
 
 
+	// Gets and sets
 	public String getCourseField() {
 		return courseField;
 	}

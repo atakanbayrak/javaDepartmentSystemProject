@@ -2,12 +2,13 @@ package javaLabProjeOdev.entities.certificate;
 
 public class Certificate {
 	
+	// Certificate class variables
 	private int certificateId;
 	private String certificateType;
 	private String certificateDate;
 	private String certificateSignatureStampCode;
 	
-	
+	// Certificate constructor
 	public Certificate(int certificateId, String certificateType, String certificateDate,
 			String certificateSignatureStampCode) {
 		super();
@@ -20,6 +21,8 @@ public class Certificate {
 	public Certificate() {
 		
 	}
+	
+	// Gets and sets
 	public int getCertificateId() {
 		return certificateId;
 	}

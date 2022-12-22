@@ -7,13 +7,14 @@ import javaLabProjeOdev.entities.course.Course;
 
 public class Student {
 
+	// Student class variables
     private String studentId;
     private String name;
     private String surname;
     private String year;
     private List<Course> registeredCourses = new ArrayList<Course>();
     
-    
+	// Student class constructor
 	public Student(String studentId, String name, String surname, String year) {
 		super();
 		this.studentId = studentId;
@@ -22,6 +23,7 @@ public class Student {
 		this.year = year;
 		
 	}
+	// Student class gets and sets
 	public String getStudentId() {
 		return studentId;
 	}

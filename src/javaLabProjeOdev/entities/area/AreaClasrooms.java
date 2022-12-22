@@ -2,20 +2,22 @@ package javaLabProjeOdev.entities.area;
 
 public class AreaClasrooms extends Area{
 
+	// Area subclass which is AreaClassrooms variables
 	private String facilityRate;
 	private String floor;
 	private boolean isUsableSymposium;
 	private boolean isAvaliable;
 	
+	// Sub class constructors
 	public AreaClasrooms(String areaName, String areaChargePersonType, String areaCapability,String facilityRate,String floor,boolean isUsableSymposium,boolean isAvaliable) {
 		super(areaName, areaChargePersonType, areaCapability);
-		// TODO Auto-generated constructor stub
 		this.facilityRate = facilityRate;
 		this.floor = floor;
 		this.isUsableSymposium = isUsableSymposium;
 		this.isAvaliable = isAvaliable;
 	}
 
+	// Sub class gets and sets
 	public String getFacilityRate() {
 		return facilityRate;
 	}

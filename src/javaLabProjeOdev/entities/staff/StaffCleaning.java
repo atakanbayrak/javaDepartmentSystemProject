@@ -2,11 +2,12 @@ package javaLabProjeOdev.entities.staff;
 
 public class StaffCleaning extends Staff{
 
+	// Staff class sub class StaffCleaning class variables
 	private String responsiblePlace;
 	private String responsibleCompany;
 	private String passedYearInDepartment;
 	
-	
+	// Staff class sub class StaffCleaning class constructor
 	public StaffCleaning(String staffId, String name, String surname,String taskInformation, float workingHours,String responsiblePlace,String responsibleCompany,String passedYearInDepartment) {
 		super(staffId, name, surname, taskInformation, workingHours);
 		this.responsiblePlace = responsiblePlace;
@@ -14,7 +15,7 @@ public class StaffCleaning extends Staff{
 		this.passedYearInDepartment = passedYearInDepartment;
 	}
 
-
+	// Staff class sub class StaffCleaning class gets and sets
 	public String getResponsiblePlace() {
 		return responsiblePlace;
 	}

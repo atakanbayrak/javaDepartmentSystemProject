@@ -2,10 +2,12 @@ package javaLabProjeOdev.entities.area;
 
 public class Area {
 
-	private String areaName;
+	// Area main class variables
+ 	private String areaName;
 	private String areaChargePersonType;
 	private String areaCapability;
 	
+	// Area constructor
 	public Area(String areaName, String areaChargePersonType, String areaCapability) {
 		super();
 		this.areaName = areaName;
@@ -13,6 +15,7 @@ public class Area {
 		this.areaCapability = areaCapability;
 	}
 
+	// Area gets and sets
 	public String getAreaName() {
 		return areaName;
 	}

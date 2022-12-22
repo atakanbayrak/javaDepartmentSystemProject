@@ -2,16 +2,20 @@ package javaLabProjeOdev.entities.student;
 
 public class StudentDoctoral extends Student{
 
+	// StudentDoctoral class which is sub class of Student variables
 	private String doctoraField;
 	private boolean isDoctoraApproved;
 	private int thesisQuantity;
+	
+	// StudentDoctoral class which is sub class of Student constructor
 	public StudentDoctoral(String studentId, String name, String surname, String year,String doctoraField,boolean isDoctoraApproved,int thesisQuantity) {
 		super(studentId, name, surname, year);
-		// TODO Auto-generated constructor stub
 		this.doctoraField = doctoraField;
 		this.isDoctoraApproved = isDoctoraApproved;
 		this.thesisQuantity = thesisQuantity;
 	}
+	
+	// StudentDoctoral class which is sub class of Student gets and sets
 	public String getDoctoraField() {
 		return doctoraField;
 	}

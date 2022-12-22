@@ -2,13 +2,14 @@ package javaLabProjeOdev.entities.staff;
 
 public class Staff {
 	
+	// Staff class variables
     private String staffId;
     private String name;
     private String surname;
     private String taskInformation;
     private float workingHours;
 	
-    
+    // Staff class constructor
     public Staff(String staffId, String name, String surname,String taskInformation, float workingHours) {
 		super();
 		this.staffId = staffId;
@@ -18,7 +19,7 @@ public class Staff {
 		this.workingHours = workingHours;
 	}
 
-
+    // Staff class gets and sets
 	public String getStaffId() {
 		return staffId;
 	}

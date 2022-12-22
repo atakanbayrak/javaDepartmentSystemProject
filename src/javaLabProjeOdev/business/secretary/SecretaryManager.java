@@ -8,6 +8,7 @@ public class SecretaryManager {
 		
 	}
 	
+	// Setting lecturer details again via secretary.
 	public Lecturer setLecturerViaSecretary(Lecturer lecturer) {
 		if(lecturer.getLecturerId() != null && lecturer.getLecturerName() != "" && lecturer.getLecturerSurname() != "") {
 			

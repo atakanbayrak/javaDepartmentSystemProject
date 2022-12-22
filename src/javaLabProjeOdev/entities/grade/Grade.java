@@ -2,6 +2,7 @@ package javaLabProjeOdev.entities.grade;
 
 public class Grade {
 	
+	// Grade class variables
 	private String studentId;
     private String name;
     private String surname;
@@ -14,6 +15,7 @@ public class Grade {
     private String lecturerSurname;
     private String grade;
     
+    // Grade class constructor
 	public Grade(String studentId, String name, String surname, String year, String courseName, String courseCode,
 			int credit, String courseLocation, String lecturerName, String lecturerSurname) {
 		super();
@@ -28,7 +30,8 @@ public class Grade {
 		this.lecturerName = lecturerName;
 		this.lecturerSurname = lecturerSurname;
 	}
-	
+    // Grade class gets and sets
+
 	public Grade() {
 	}
 

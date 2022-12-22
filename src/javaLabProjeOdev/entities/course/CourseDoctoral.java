@@ -2,17 +2,20 @@ package javaLabProjeOdev.entities.course;
 
 public class CourseDoctoral extends CourseGraduate{
 	
+	// CourseGraduate subclass which is CourseDoctoral variables
 	private boolean isCourseNeedThesisForSuccess;
 	private String chefOfDoctoralStudentName;
 	private String chefOfDoctoralStudentSurname;
+	
+	// Constructor
 	public CourseDoctoral(String courseCode, String courseName, int credit, String courseLocation,boolean isCourseNeedThesisForSuccess,String chefOfDoctoralStudentName,String chefOfDoctoralStudentSurname) {
 		super(courseCode, courseName, credit, courseLocation);
-		// TODO Auto-generated constructor stub
 		this.isCourseNeedThesisForSuccess = isCourseNeedThesisForSuccess;
 		this.chefOfDoctoralStudentName = chefOfDoctoralStudentName;
 		this.chefOfDoctoralStudentSurname = chefOfDoctoralStudentSurname;
 	}
 
+	// Gets and sets
 	public boolean isCourseNeedThesisForSuccess() {
 		return isCourseNeedThesisForSuccess;
 	}

@@ -5,7 +5,8 @@ import java.util.List;
 import javaLabProjeOdev.entities.student.Student;
 
 public class Course {
-
+	
+	// Main course class and variables
     private String courseCode;
     private String courseName;
     private int credit;
@@ -15,6 +16,7 @@ public class Course {
     private List<Course> courses;
     private List<Student> idInformations;
 
+    // Course constructor
     public Course(String courseCode, String courseName, int credit, String courseLocation, List<Student> idInformations) {
         this.courseCode = courseCode;
         this.courseName = courseName;
@@ -23,7 +25,7 @@ public class Course {
         this.idInformations = idInformations;
         
     }
-    
+    // Course constructor
     public Course(String courseCode, String courseName, int credit, String courseLocation) {
         this.courseCode = courseCode;
         this.courseName = courseName;
@@ -33,6 +35,7 @@ public class Course {
        
     }
 
+    // Gets and sets
 	public String getCourseCode() {
 		return courseCode;
 	}

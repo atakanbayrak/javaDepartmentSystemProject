@@ -2,11 +2,13 @@ package javaLabProjeOdev.entities.staff;
 
 public class StaffTechnical extends Staff{
 
+	// Staff class sub class StaffTechnical class variables
 	private String technicalField;
 	private String responsibleCompany;
 	private String contractYear;
 	private boolean isDependentFromSchool;
 	
+	// Staff class sub class StaffTechnical class constructor
 	public StaffTechnical(String staffId, String name, String surname, String taskInformation, float workingHours,String technicalField,String responsibleCompany,String contractYear,boolean isDependentFromSchool) {
 		super(staffId, name, surname, taskInformation, workingHours);
 		// TODO Auto-generated constructor stub
@@ -17,6 +19,7 @@ public class StaffTechnical extends Staff{
 		this.isDependentFromSchool = isDependentFromSchool;
 	}
 
+	// Staff class sub class StaffTechnical class gets and sets
 	public String getTechnicalField() {
 		return technicalField;
 	}

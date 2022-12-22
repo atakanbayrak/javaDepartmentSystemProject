@@ -2,9 +2,12 @@ package javaLabProjeOdev.entities.student;
 
 public class StudentGraduate extends Student{
 
+	// StudentGraduate class which is sub class of Student variables
 	private String graduateYear;
 	private boolean isWorkInAnotherCompany;
 	private float graduateExamResult;
+	// StudentGraduate class which is sub class of Student constructor
+
 	public StudentGraduate(String studentId, String name, String surname, String year,String graduateYear,boolean isWorkInAnotherCompany,float graduateExamResult) {
 		super(studentId, name, surname, year);
 		// TODO Auto-generated constructor stub
@@ -13,6 +16,8 @@ public class StudentGraduate extends Student{
 		this.graduateExamResult = graduateExamResult;
 	}
 	
+	// StudentGraduate class which is sub class of Student gets and sets
+
 	public String getGraduateYear() {
 		return graduateYear;
 	}
